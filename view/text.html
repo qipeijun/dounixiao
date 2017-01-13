@@ -1,0 +1,22 @@
+<ion-header-bar class="bar-balanced">
+    <h1 class="title">搞笑段子</h1>
+</ion-header-bar>
+<ion-content class="has-tabs">
+
+    <ul class="list card" ng-repeat="x in items2">
+        <li class="item item-divider">
+            <h2>{{x.title}}</h2>
+        </li>
+        <li class="item item-text-wrap">
+            <p ng-bind-html="x.text"></p>
+        </li>
+    </ul>
+
+    <ion-infinite-scroll
+            distance="20%"
+            spinner="spiral"
+            on-infinite="plus()"
+    ></ion-infinite-scroll>
+
+
+</ion-content>

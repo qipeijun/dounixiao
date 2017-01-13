@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Haha</title>
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<ng-view></ng-view>
+
+<ul class="tabs tabs-icon-top tabs-balanced">
+    <a href="#/gif" class="tab-item active">
+        <i class="icon ion-social-octocat"></i>
+        搞笑动图
+    </a>
+    <a href="#/photo" class="tab-item">
+        <i class="icon ion-social-github"></i>
+        搞笑静态
+    </a>
+    <a href="#/text" class="tab-item">
+        <i class="icon ion-social-wordpress"></i>
+        搞笑段子
+    </a>
+</ul>
+
+
+<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+<script src="lib/angular-route.min.js"></script>
+
+<script src="js/controller.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
